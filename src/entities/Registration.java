@@ -1,10 +1,31 @@
 package entities;
 
+import Enums.TypeOfPlan;
+
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Registration {
     private double ID;
     private LocalDate dateOfStart;
     private Student student = new Student();
+    private TypeOfPlan plan;
+
+    public Registration(LocalDate dateOfStart, Student students, TypeOfPlan plan) {
+        this.dateOfStart = dateOfStart;
+        this.student = students;
+        this.plan = plan;
+    }
+
+    @Override
+    public String toString() {
+        return "Registration{" +
+                "ID=" + ID +
+                ", dateOfStart=" + dateOfStart +
+                ", student=" + student +
+                ", plan=" + plan +
+                '}';
+    }
 }
 
