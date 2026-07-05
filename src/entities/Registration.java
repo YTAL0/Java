@@ -12,10 +12,15 @@ public class Registration {
     private Student student;
     private TypeOfPlan plan;
     private Payment payment;
+
     public Registration(LocalDate dateOfStart, Student students, TypeOfPlan plan) {
         this.dateOfStart = dateOfStart;
         this.student = students;
         this.plan = plan;
+    }
+
+    public TypeOfPlan getPlan() {
+        return plan;
     }
 
     @Override
