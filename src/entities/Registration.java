@@ -11,7 +11,7 @@ public class Registration {
     private LocalDate dateOfStart;
     private Student student;
     private TypeOfPlan plan;
-
+    private Payment payment;
     public Registration(LocalDate dateOfStart, Student students, TypeOfPlan plan) {
         this.dateOfStart = dateOfStart;
         this.student = students;
