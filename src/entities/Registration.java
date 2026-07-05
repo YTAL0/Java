@@ -9,7 +9,7 @@ import java.util.List;
 public class Registration {
     private double ID;
     private LocalDate dateOfStart;
-    private Student student = new Student();
+    private Student student;
     private TypeOfPlan plan;
 
     public Registration(LocalDate dateOfStart, Student students, TypeOfPlan plan) {
