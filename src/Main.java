@@ -10,5 +10,4 @@ void main(){
     Registration r1 = new Registration(LocalDate.now(), s1, TypeOfPlan.ANNUAL);
     Payment p1 = new Payment(r1);
     IO.println(r1.toString());
-    IO.println(p1.GenerateFinalValue());
 }

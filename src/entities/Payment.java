@@ -21,17 +21,8 @@ public class Payment {
     public void setIsPayed(boolean isPayed){
         this.isPayed = isPayed;
     }
-    public double GenerateFinalValue(){
-         PaymentProcessor paymentProcessor = new PaymentProcessor();
-        if(registration.getTypeStudent() != (TypeStudent.STUDENT)){
-            DiscountRegular discountRegular = new DiscountRegular();
-            this.finalValue =  paymentProcessor.CalculatePayment(registration, discountRegular);
-        } else{
-            DiscountStudant discountStudant = new DiscountStudant();
-            this.finalValue = paymentProcessor.CalculatePayment(registration, discountStudant);
-        }
-        return  finalValue;
+    public void setFinalValue(double finalValue){
+        this.finalValue = finalValue;
     }
-
 
 }
