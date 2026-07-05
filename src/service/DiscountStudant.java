@@ -4,10 +4,13 @@ import Interfaces.CalculateDiscount;
 
 public class DiscountStudant implements CalculateDiscount {
 
-    private final double Discount = 0.2;
+    private final double discount = 0.2;
+
+    public DiscountStudant() {
+    }
 
     @Override
     public double calculateFinalValue(double baseValue) {
-        return baseValue * 0.2;
+        return baseValue * discount;
     }
 }

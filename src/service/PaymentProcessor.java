@@ -5,11 +5,16 @@ import entities.Registration;
 
 public class PaymentProcessor {
 
+    public PaymentProcessor() {
+    }
+
     public double CalculatePayment(Registration registration, CalculateDiscount strategyCalculate){
 
         double baseValue = registration.getPlan().getBaseValue();
-        double finalValue= strategyCalculate.calculateFinalValue(baseValue);
+
+        double finalValue = baseValue - strategyCalculate.calculateFinalValue(baseValue);
 
         return finalValue;
+
     }
 }

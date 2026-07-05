@@ -1,6 +1,7 @@
 package entities;
 
 import Enums.TypeOfPlan;
+import Enums.TypeStudent;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -21,6 +22,10 @@ public class Registration {
 
     public TypeOfPlan getPlan() {
         return plan;
+    }
+
+    public TypeStudent getTypeStudent(){
+        return student.getTypeStudent();
     }
 
     @Override
