@@ -2,10 +2,7 @@ package entities;
 
 import Enums.TypeOfPlan;
 import Enums.TypeStudent;
-
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
 
 public class Registration {
     private double ID;

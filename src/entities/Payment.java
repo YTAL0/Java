@@ -1,10 +1,5 @@
 package entities;
 
-import Enums.TypeStudent;
-import service.DiscountRegular;
-import service.DiscountStudant;
-import service.PaymentProcessor;
-
 public class Payment {
     private double finalValue;
     private boolean isPayed;

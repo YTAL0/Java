@@ -9,7 +9,6 @@ public class PaymentProcessor {
 
     public PaymentProcessor() {
     }
-
     public Payment CalculatePayment(Registration registration){
 
         double baseValue = registration.getPlan().getBaseValue();
